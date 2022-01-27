@@ -128,7 +128,7 @@ export default function Home({order, setOrder} = props) {
             <h4>sneaker company</h4>
             <h1>Fall limited edition sneakers</h1>
 
-            <p>These low-profile are your perfect casua wear companion. featuring a durable rubber outer sole, they"ll withstand every the weather can offer.</p>
+            <p>These low-profile are your perfect casua wear companion. featuring a durable rubber outer sole, they'll withstand every the weather can offer.</p>
 
             <div className="price">
               <div className="boxPrices">

@@ -65,7 +65,7 @@ export default function Header({order, setOrder} = props ) {
             <img src={item.imagem} />
             <div className="infos">
               <span>{item.nome}</span>
-              <span class="preco">{item.preco} x {item.qty.addMore} <b>${item.precoFinal.finalPrice}.00</b></span>
+              <span className="preco">{item.preco} x {item.qty.addMore} <b>${item.precoFinal.finalPrice}.00</b></span>
             </div>
             <button className="remove" onClick={() => setOrder(null)}><img src="/icon-delete.svg" alt="delete" /></button>
           </div>
