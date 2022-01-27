@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Thumbs, Navigation } from "swiper";
 
+import Head from 'next/head';
+
 
 
 export default function Home({order, setOrder} = props) {  
@@ -37,6 +39,11 @@ export default function Home({order, setOrder} = props) {
   ];
 
   return (
+    <>
+    <Head>
+      <title>Sneakers | Fall Limited Edition Sneakers</title>
+      <link rel="icon" href="/favicon-32x32.png" type="image/x-icon" />
+    </Head>
     <main className="product">
       <div className="container">
         <div className="gridProduct">
@@ -155,5 +162,6 @@ export default function Home({order, setOrder} = props) {
         </div>
       </div>
     </main>
+    </>
   )
 }
