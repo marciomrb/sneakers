@@ -16,7 +16,7 @@ export default function Header({order, setOrder} = props ) {
     <header>
       <div className="container">
 
-        <Link href="/"><a className="brand"><img src="/logo.svg" /></a></Link>
+        <Link href="/"><a className="brand"><img src="/logo.svg" alt="logo sneakers" /></a></Link>
 
         <ul className="nav">
           <li><Link href="#">Collections</Link></li>
@@ -46,8 +46,8 @@ export default function Header({order, setOrder} = props ) {
         `}</style>
 
         <ul className='cart-profile'>
-          <li><button className="cart" onClick={() => setCart(cart => !cart)}><img src="/icon-cart.svg" /></button></li>
-          <li><button className="profile"><img src="/image-avatar.png" /></button></li>
+          <li><button className="cart" onClick={() => setCart(cart => !cart)}><img src="/icon-cart.svg" alt="cart" /></button></li>
+          <li><button className="profile"><img src="/image-avatar.png" alt="user" /></button></li>
         </ul>
 
 
@@ -67,7 +67,7 @@ export default function Header({order, setOrder} = props ) {
               <span>{item.nome}</span>
               <span class="preco">{item.preco} x {item.qty.addMore} <b>${item.precoFinal.finalPrice}.00</b></span>
             </div>
-            <button className="remove" onClick={() => setOrder(null)}><img src="/icon-delete.svg" /></button>
+            <button className="remove" onClick={() => setOrder(null)}><img src="/icon-delete.svg" alt="delete" /></button>
           </div>
           <button className="checkout">Checkout</button>
           
