@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Thumbs, Navigation } from 'swiper';
+import React, { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Thumbs, Navigation } from "swiper";
 
 
 
@@ -10,7 +10,7 @@ export default function Home({order, setOrder} = props) {
   const [thumbsSwiperF, setThumbsSwiperF] = useState(null);
   const [ addMore, setAddMore ] = useState(1);
 
-  const price = '125.00'; 
+  const price = "125.00"; 
     const [ finalPrice, setFinalPrice ] = useState(price);
 
   useEffect(() => {
@@ -27,12 +27,12 @@ export default function Home({order, setOrder} = props) {
 
   const data = [
     {
-      'id': 1,
-      'imagem': '/image-product-1.jpg',
-      'nome': 'Fall Limited Edition Sneakers',
-      'preco': '$125.00',
-      'precoFinal': {finalPrice},      
-      'qty': {addMore},
+      "id": 1,
+      "imagem": "/image-product-1.jpg",
+      "nome": "Fall Limited Edition Sneakers",
+      "preco": "$125.00",
+      "precoFinal": {finalPrice},      
+      "qty": {addMore},
     }
   ];
 
@@ -47,7 +47,7 @@ export default function Home({order, setOrder} = props) {
               thumbs={{ swiper: thumbsSwiper }}
               spaceBetween={0}
               slidesPerView={1}
-              className='productSlide'             
+              className="productSlide"             
               onClick={() => setFullScreen(true)}   
             >
           
@@ -70,7 +70,7 @@ export default function Home({order, setOrder} = props) {
             </Swiper>
            
 
-            <Swiper modules={[Thumbs, Navigation]} watchSlidesProgress onSwiper={setThumbsSwiper} className='thumbProduct'>
+            <Swiper modules={[Thumbs, Navigation]} watchSlidesProgress onSwiper={setThumbsSwiper} className="thumbProduct">
               <SwiperSlide><img src="/image-product-1-thumbnail.jpg" alt="product image"/></SwiperSlide>
               <SwiperSlide><img src="/image-product-2-thumbnail.jpg" alt="product image"/></SwiperSlide>
               <SwiperSlide><img src="/image-product-3-thumbnail.jpg" alt="product image"/></SwiperSlide>
@@ -79,7 +79,7 @@ export default function Home({order, setOrder} = props) {
             </Swiper>           
           </div>
 
-          <div className={`slideProductFull ${fullScreen && 'show'}`}>  
+          <div className={`slideProductFull ${fullScreen && "show"}`}>  
         <div className="swiper-button-next-unique"> </div>
         <div className="swiper-button-prev-unique"> </div>
 
@@ -89,10 +89,10 @@ export default function Home({order, setOrder} = props) {
               thumbs={{ swiper: thumbsSwiperF }}
               spaceBetween={0}
               slidesPerView={1}
-              className='productSlide' 
+              className="productSlide" 
               navigation={{
-                nextEl: '.swiper-button-next-unique',
-                prevEl: '.swiper-button-prev-unique'
+                nextEl: ".swiper-button-next-unique",
+                prevEl: ".swiper-button-prev-unique"
               }}
             >
              
@@ -115,7 +115,7 @@ export default function Home({order, setOrder} = props) {
             </Swiper>
            
 
-            <Swiper modules={[Thumbs, Navigation]} watchSlidesProgress onSwiper={setThumbsSwiperF} className='thumbProduct'>
+            <Swiper modules={[Thumbs, Navigation]} watchSlidesProgress onSwiper={setThumbsSwiperF} className="thumbProduct">
               <SwiperSlide><img src="/image-product-1-thumbnail.jpg" alt="product image"/></SwiperSlide>
               <SwiperSlide><img src="/image-product-2-thumbnail.jpg" alt="product image"/></SwiperSlide>
               <SwiperSlide><img src="/image-product-3-thumbnail.jpg" alt="product image"/></SwiperSlide>
@@ -128,14 +128,14 @@ export default function Home({order, setOrder} = props) {
             <h4>sneaker company</h4>
             <h1>Fall limited edition sneakers</h1>
 
-            <p>These low-profile are your perfect casua wear companion. featuring a durable rubber outer sole, they'll withstand every the weather can offer.</p>
+            <p>These low-profile are your perfect casua wear companion. featuring a durable rubber outer sole, they"ll withstand every the weather can offer.</p>
 
             <div className="price">
               <div className="boxPrices">
-                <span className='currentPrice'>${price}</span>
-                <span className='pill offer'>50%</span>
+                <span className="currentPrice">${price}</span>
+                <span className="pill offer">50%</span>
               </div>              
-              <span className='oldPrice'>$250.00</span>
+              <span className="oldPrice">$250.00</span>
             </div>
 
             <div className="buttons">
